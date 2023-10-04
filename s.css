@@ -1,0 +1,397 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px 20px;
+
+    
+       
+}
+
+/* .img{
+    
+        background-image: url(https://cdn.pixabay.com/photo/2017/06/11/02/05/wheat-2391348_1280.jpg);
+      
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     
+} */
+
+.logo {
+    color: #fff;
+    font-size: 35px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.menu a:hover {
+    color: #ff2;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 9px; /* Push search bar to the right */
+    border-color: #f2f2f2;
+    margin-top: 18px;
+}
+
+.srch {
+    font-family: 'Times New Roman';
+    margin-bottom: 18px;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    /* border: #fff; */
+}
+.srchbtn{
+    width: 100px;
+    height: 40px;
+    margin-top: -16px;
+    background: beige;
+    border: 2px solid bisque;
+    color: black;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-left: -2px;
+
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: beige;
+    border: 2px solid bisque;
+    color: black;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-left: -2px;
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto; /* Increase margin for better spacing */
+    background-color: rgba(255, 255, 255, 0.9); /* Lighten the content background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+.hero {
+    flex: 1;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-family: 'Times New Roman', serif;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.par {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.cn {
+    background-color: #000;
+    color: beige;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cn:hover {
+    background-color: beige;
+    color: #000;
+}
+
+/* Login Form */
+.login-form {
+    flex: 1;
+    max-width: 400px;
+    background: rgba(50, 153, 153, 0.5);
+    border-radius: 10px;
+    padding: 25px;
+    color: #fff;
+}
+
+.login-form h2 {
+    font-size: 22px;
+    background-color: rgba(255, 94, 0, 0.847);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    text-align: center;
+    border-color: rgb(255, 94, 0);
+}
+
+.login-form input {
+    width: 100%;
+    height: 35px;
+    padding-left: 15px;
+    background: transparent;
+    border-bottom: 1px solid black;
+    color: #030101;
+    /* text-emphasis-color: black; */
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+/* CSS */
+button {
+    background-color: rgb(255, 94, 0);
+    color: white;
+    margin-top: 9px;
+    border-radius: 3px;
+    padding: 5px;
+    border-color: rgb(255, 94, 0);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+button:hover {
+    background-color: red; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+.link{
+    margin-top: 9px;
+}
+.liw{
+    margin-top: 5px;
+}
+.gmail-login{
+
+    text-decoration: none;
+    margin-top: 5px;
+    color:hsla(342, 79%, 53%, 0.82)
+}
+
+.login-form input:focus {
+    outline: none
+}
+/* Add styling for the footer section */
+/* Add styling for the footer section */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333; /* Change the background color to your preference */
+    color: #fff; /* Change the text color to your preference */
+    padding: 20px 0; /* Add some padding for spacing */
+    text-align: center; /* Center-align the content */
+    z-index: 999; /* Ensure it's on top of other content */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    font-size: 24px;
+}
+
+.icons a {
+    color: #fff; /* Change the icon color to your preference */
+    text-decoration: none;
+    margin: 0 10px; /* Add spacing between icons */
+}
+
+/* Add styles to the ion-icon elements if needed */
+
+/* Ensure that the main content doesn't overlap with the footer */
+.content {
+    margin-bottom: 80px; /* Adjust the value as needed based on your footer's height */
+}
+
+/* Add styles to the ion-icon elements if needed */
+/* Your existing CSS styles go here */
+
+/* Styling for the Disease Predictor Section */
+.disease-predictor {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 75%;
+}
+
+.disease-predictor h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.disease-predictor h3 {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.disease-predictor p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+/* CSS */
+.disease-predictor {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  .disease-predictor h2 {
+    font-size: 24px;
+    color: #000000;
+  }
+  
+  .disease-predictor h3 {
+    font-size: 18px;
+    color: #090404;
+    margin-top: 10px;
+  }
+  
+  .disease-predictor p {
+    font-size: 16px;
+    color: #090606;
+    margin-top: 10px;
+  }
+  
+/* CSS */
+body {
+    font-family: sans-serif;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  .farming{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto; /* Increase margin for better spacing */
+    background-color: rgba(255, 255, 255, 0.9); /* Lighten the content background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  select:hover {
+    border-color: #000;
+  }
+  
+  option {
+    font-size: 16px;
+  }
+.field{
+    margin: 9px;
+    padding: 16px;
+} 
+ 

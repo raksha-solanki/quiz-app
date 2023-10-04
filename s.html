@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <!-- <img class="img" src="https://cdn.pixabay.com/photo/2017/06/11/02/05/wheat-2391348_1280.jpg" alt="Image Description"> -->
+
+            </div>
+            <div class="logo">
+                <h1>Agriculture</h1>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Search">
+                <button class="srchbtn">Search</button>
+            </div>
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="content">
+        <section class="hero">
+            <h1>Agriculture <br><span>Based</span> <br>Website</h1>
+            <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+                Ad ab dolor accusamus dolorum facere reprehenderit eius <br>omnis aliquam
+                maiores perspiciatis delectus doloremque quos veniam.<br>
+                Aliquid non similique voluptatem quisquam optio.</p>
+            <a href="#" class="btn cn">JOIN US</a>
+        </section>
+
+        <section class="login-form">
+            <h2>Login Here</h2>
+            <form>
+                <input type="email" name="email" placeholder="Enter Email Here">
+                <input type="password" name="password" placeholder="Enter Password Here">
+                <button class="btnn">Login</button>
+            </form>
+            <p class="link">Don't have an account? <a href="#">Sign up here</a></p>
+            <p class="liw">Log in with  <a href="https://accounts.google.com/" class="gmail-login">Gmail</a></p>
+            
+        </section>
+    </main>
+
+    <!-- HTML -->
+    <main class="farming">
+    <section class="crop-predictor">
+      
+      <fieldset class="field">
+        <legend>
+            <h2>Crop Predictor</h2>
+        </legend>
+      
+      
+      <p>
+        This tool can help you decide which crop to grow based on your location and environmental conditions.
+      </p>
+      <form action="#" method="post">
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location">
+
+        <label for="environmental-conditions">Environmental Conditions:</label>
+        <input type="text" name="environmental-conditions" id="environmental-conditions">
+
+        <button type="submit">Predict Crop</button>
+      </form>
+    </fieldset>
+    </section>
+
+    <section class="fertilizer-predictor">
+        <fieldset class="field">
+            <legend><h2>Fertilizer Predictor</h2></legend>
+        
+      <!-- <h2>Fertilizer Predictor</h2> -->
+      <p>
+        This tool can help you decide which fertilizer to use based on your crop and soil type.
+      </p>
+      <form action="#" method="post">
+       
+        <label for="crop">Crop:</label>
+         <!-- Crop Drop-down List -->
+<select name="crop" id="crop">
+    <option value="">Select Crop</option>
+    <option value="Rice">Rice</option>
+    <option value="Wheat">Wheat</option>
+    <option value="Maize">Maize</option>
+    <option value="Soybean">Soybean</option>
+    <option value="Kharif Crop">Kharif Crop</option>
+    <option value="Cotton">Cotton</option>
+    <option value="Jowar">Jowar</option>
+    <option value="Barley">Barley</option>
+    <option value="Finger Millet">Finger Millet</option>
+    <option value="Mung Bean">Mung Bean</option>
+    <option value="Coffee">Coffee</option>
+    <option value="Jute">Jute</option>
+    <option value="Cumin">Cumin</option>
+    <option value="Tea">Tea</option>
+    <option value="Tobacco">Tobacco</option>
+    <option value="Rubber">Rubber</option>
+    <option value="Flax">Flax</option>
+    <option value="Hemp">Hemp</option>
+    <option value="Black Gram">Black Gram</option>
+    <option value="Sugar Cane">Sugar Cane</option>
+    <option value="Pulses">Pulses</option>
+    <option value="Toor">Toor</option>
+    <option value="Soyabeen">Soyabeen</option>
+    ...
+  </select>
+  
+
+      
+        <label for="soil-type">Soil Type:</label>
+      
+       
+  <!-- Soil Type Drop-down List -->
+  <select name="soil_type" id="soil_type">
+    <option value="">Select Soil Type</option>
+    <option value="Sandy">Sandy</option>
+    <option value="Loamy">Loamy</option>
+    <option value="Clayey">Clayey</option>
+    <option value="Peaty">Peaty</option>
+    <option value="Silt">Silt</option>
+    <option value="Desert Soil">Desert Soil</option>
+    <option value="Black SOil">Black Soil</option>
+    <option value="Red Soil">Red Soil</option>
+    <option value="Mountain Soil">Mountain Soil</option>
+    <option value="Laterite Soil">Laterite Soil</option>
+    <option value="Alluvial Soil">Alluvial Soil</option>
+    ...
+  </select>
+  
+
+        <button type="submit">Predict Fertilizer</button>
+      </form>
+    </fieldset>
+    </section>
+
+
+<!--Disease Predictor Section  -->
+    <section class="disease-predictor">
+      <fieldset class="field">
+        <legend>
+            <h2>Disease Predictor</h2>
+        </legend>
+      
+      
+      <p>
+        This tool can help you diagnose plant diseases by uploading an image of the affected plant.
+      </p>
+      <form action="#" method="post">
+        <input type="file" name="disease-image" id="disease-image">
+
+        <button type="submit">Diagnose Disease</button>
+      </form>
+    </fieldset>
+    </section>
+  </main>
+  
+    
+
+    <!-- <footer>
+        <div class="icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+    </footer> -->
+    <footer>
+        <div class="icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+        <p>&copy; 2023 Your Company Name</p> <!-- Add some copyright information or additional content -->
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
